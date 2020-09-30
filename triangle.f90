@@ -9,6 +9,7 @@ PROGRAM  HeronFormula
    REAL     :: s                   ! half of perimeter
    REAL     :: Area                ! triangle area
    LOGICAL  :: Cond_1, Cond_2      ! two logical conditions
+   LOGICAL  :: Cond_3
 
    WRITE(*,*) "Enter three numbers and press ENTER at the end of each"
    READ(*,*)  a, b, c
@@ -26,6 +27,11 @@ PROGRAM  HeronFormula
       WRITE(*,*) "Triangle area = ", Area
    ELSE
       WRITE(*,*) "ERROR: this is not a triangle!"
+   END IF
+
+   Cond_3 = a**2 == b**2 + c**2
+   IF (Cond_3) THEN
+      WRITE(*,*) "This triangle is right-angled"
    END IF
 
 END PROGRAM  HeronFormula
