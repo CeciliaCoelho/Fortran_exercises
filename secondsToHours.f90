@@ -9,7 +9,6 @@ program secondsToHours
 
     REAL :: s   !seconds to convert
     REAL :: h , m , rs  !hours, minutes, seconds
-    REAL :: t   !converted s
 
     WRITE(*,*) "Enter the number of seconds to be converted"
     READ(*,*) s
@@ -18,9 +17,6 @@ program secondsToHours
     m = (s/3600 - h) * 60
     rs = s - h*3600 - m*60
 
-    WRITE(*,*) "hours" , INT(h)
-    WRITE(*,*) "minutes" , INT(m)
-    WRITE(*,*) "seconds" , INT(rs)
 
     WRITE(*,*) INT(h) , ":" , INT(m) , ":" , INT(rs) 
     

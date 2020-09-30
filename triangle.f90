@@ -31,7 +31,7 @@ PROGRAM  HeronFormula
 
    Cond_3 = a**2 == b**2 + c**2
    IF (Cond_3) THEN
-      WRITE(*,*) "This triangle is right-angled"
+          WRITE(*,*) "This triangle is right-angled"
    END IF
 
 END PROGRAM  HeronFormula
